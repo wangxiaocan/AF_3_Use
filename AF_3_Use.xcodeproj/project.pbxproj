@@ -13,6 +13,13 @@
 		72035C261F02341A00ADDC62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72035C241F02341A00ADDC62 /* Main.storyboard */; };
 		72035C281F02341A00ADDC62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72035C271F02341A00ADDC62 /* Assets.xcassets */; };
 		72035C2B1F02341A00ADDC62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72035C291F02341A00ADDC62 /* LaunchScreen.storyboard */; };
+		72035C431F02346200ADDC62 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72035C351F02346200ADDC62 /* AFHTTPSessionManager.m */; };
+		72035C441F02346200ADDC62 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72035C381F02346200ADDC62 /* AFNetworkReachabilityManager.m */; };
+		72035C451F02346200ADDC62 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72035C3A1F02346200ADDC62 /* AFSecurityPolicy.m */; };
+		72035C461F02346200ADDC62 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 72035C3C1F02346200ADDC62 /* AFURLRequestSerialization.m */; };
+		72035C471F02346200ADDC62 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 72035C3E1F02346200ADDC62 /* AFURLResponseSerialization.m */; };
+		72035C481F02346200ADDC62 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72035C401F02346200ADDC62 /* AFURLSessionManager.m */; };
+		72035C491F02346200ADDC62 /* RequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72035C421F02346200ADDC62 /* RequestModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,21 @@
 		72035C271F02341A00ADDC62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72035C2A1F02341A00ADDC62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72035C2C1F02341A00ADDC62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72035C341F02346200ADDC62 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		72035C351F02346200ADDC62 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		72035C361F02346200ADDC62 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		72035C371F02346200ADDC62 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		72035C381F02346200ADDC62 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		72035C391F02346200ADDC62 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		72035C3A1F02346200ADDC62 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		72035C3B1F02346200ADDC62 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		72035C3C1F02346200ADDC62 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		72035C3D1F02346200ADDC62 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		72035C3E1F02346200ADDC62 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		72035C3F1F02346200ADDC62 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		72035C401F02346200ADDC62 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		72035C411F02346200ADDC62 /* RequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestModel.h; sourceTree = "<group>"; };
+		72035C421F02346200ADDC62 /* RequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +80,7 @@
 		72035C1A1F02341A00ADDC62 /* AF_3_Use */ = {
 			isa = PBXGroup;
 			children = (
+				72035C321F02346200ADDC62 /* OtherSource */,
 				72035C1E1F02341A00ADDC62 /* AppDelegate.h */,
 				72035C1F1F02341A00ADDC62 /* AppDelegate.m */,
 				72035C211F02341A00ADDC62 /* ViewController.h */,
@@ -77,6 +100,36 @@
 				72035C1C1F02341A00ADDC62 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72035C321F02346200ADDC62 /* OtherSource */ = {
+			isa = PBXGroup;
+			children = (
+				72035C331F02346200ADDC62 /* AFNetworking */,
+				72035C411F02346200ADDC62 /* RequestModel.h */,
+				72035C421F02346200ADDC62 /* RequestModel.m */,
+			);
+			path = OtherSource;
+			sourceTree = "<group>";
+		};
+		72035C331F02346200ADDC62 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				72035C341F02346200ADDC62 /* AFHTTPSessionManager.h */,
+				72035C351F02346200ADDC62 /* AFHTTPSessionManager.m */,
+				72035C361F02346200ADDC62 /* AFNetworking.h */,
+				72035C371F02346200ADDC62 /* AFNetworkReachabilityManager.h */,
+				72035C381F02346200ADDC62 /* AFNetworkReachabilityManager.m */,
+				72035C391F02346200ADDC62 /* AFSecurityPolicy.h */,
+				72035C3A1F02346200ADDC62 /* AFSecurityPolicy.m */,
+				72035C3B1F02346200ADDC62 /* AFURLRequestSerialization.h */,
+				72035C3C1F02346200ADDC62 /* AFURLRequestSerialization.m */,
+				72035C3D1F02346200ADDC62 /* AFURLResponseSerialization.h */,
+				72035C3E1F02346200ADDC62 /* AFURLResponseSerialization.m */,
+				72035C3F1F02346200ADDC62 /* AFURLSessionManager.h */,
+				72035C401F02346200ADDC62 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +204,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72035C481F02346200ADDC62 /* AFURLSessionManager.m in Sources */,
 				72035C231F02341A00ADDC62 /* ViewController.m in Sources */,
 				72035C201F02341A00ADDC62 /* AppDelegate.m in Sources */,
+				72035C491F02346200ADDC62 /* RequestModel.m in Sources */,
+				72035C441F02346200ADDC62 /* AFNetworkReachabilityManager.m in Sources */,
 				72035C1D1F02341A00ADDC62 /* main.m in Sources */,
+				72035C451F02346200ADDC62 /* AFSecurityPolicy.m in Sources */,
+				72035C461F02346200ADDC62 /* AFURLRequestSerialization.m in Sources */,
+				72035C471F02346200ADDC62 /* AFURLResponseSerialization.m in Sources */,
+				72035C431F02346200ADDC62 /* AFHTTPSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +337,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RDLPRV575D;
 				INFOPLIST_FILE = AF_3_Use/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xiaocan.AF-3-Use";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,6 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RDLPRV575D;
 				INFOPLIST_FILE = AF_3_Use/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xiaocan.AF-3-Use";
 				PRODUCT_NAME = "$(TARGET_NAME)";

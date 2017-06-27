@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AFNetworking.h"
 
 @interface AppDelegate ()
 
@@ -17,9 +18,51 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self AFNetworkStatus];
     return YES;
 }
 
+
+
+/*
+ typedef NS_ENUM(NSInteger, AFNetworkReachabilityStatus) {
+ AFNetworkReachabilityStatusUnknown          = -1,      未知
+ AFNetworkReachabilityStatusNotReachable     = 0,       无网络
+ AFNetworkReachabilityStatusReachableViaWWAN = 1,       蜂窝数据网络
+ AFNetworkReachabilityStatusReachableViaWiFi = 2,       WiFi
+ };
+ */
+
+/** 开启网络监听 */
+- (void)AFNetworkStatus{
+    
+    //网络监测
+    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
+    [manager startMonitoring];
+    [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        switch (status) {
+            case AFNetworkReachabilityStatusUnknown:
+            NSLog(@"未知网络状态");
+            break;
+            case AFNetworkReachabilityStatusNotReachable:
+            NSLog(@"无网络");
+            break;
+            
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+            NSLog(@"蜂窝数据网");
+            break;
+            
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+            NSLog(@"WiFi网络");
+            
+            break;
+            
+            default:
+            break;
+        }
+        
+    }] ;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
